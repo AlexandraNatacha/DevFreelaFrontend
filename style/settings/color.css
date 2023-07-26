@@ -1,0 +1,14 @@
+:root {
+    /*PRIMARY*/
+    --dev-color-primary-light: #004cd8;
+    --dev-color-primary: #0041BE;
+
+    /*DANGER*/
+    --dev-color-danger: #FF2222;
+
+    /*GRAY*/
+    --dev-color-gray: #767684;
+    --dev-color-gray-lighter: #F9FBFD;
+    --dev-color-gray-light: #B8B7B7;
+    --dev-color-gray-dark: #09090A;
+}

@@ -1,0 +1,57 @@
+.dev-login>.dev-wrapper {
+    max-width: var(--dv-main-wrapper);
+    margin: 0 auto;
+}
+
+.dev-login>.dev-wrapper>.dev-header {
+    height: Var(--dev-header-size);
+    width: 100%;
+    background: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.15);
+    position: fixed;
+    left: 0;
+    top: 0;
+
+}
+
+.dev-login>.dev-wrapper>.dev-header>.wrapper {
+    max-width: var(--dv-main-wrapper);
+    margin: 0 auto;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.dev-login>.dev-wrapper>.dev-header>.wrapper>.image-wrapper {
+    height: var(--dev-header-size);
+    padding-top: 16px 0;
+}
+
+.dev-login>.dev-wrapper>.dev-header>.wrapper>.image-wrapper>.image {
+    height: 100%;
+}
+
+.dev-login>.dev-wrapper>.main-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 92px;
+}
+
+.dev-login>.dev-wrapper>.main-content>.left {
+    padding-top: 48px;
+}
+
+.dev-login>.dev-wrapper>.main-content>.right {
+    overflow: hidden;
+    position: relative;
+    height: 100vh;
+}
+
+.dev-login>.dev-wrapper>.main-content>.right>.image {
+    position: absolute;
+    height: 100%;
+    min-width: 100%;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
