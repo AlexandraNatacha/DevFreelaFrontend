@@ -1,0 +1,51 @@
+/*Classe base dev-radio*/
+.dev-radio {
+    position: relative;
+    padding-left: 32px;
+    padding-top: 2px;
+    cursor: pointer;
+    font-size: calc(var(--dev-font-size-base) + 8px);
+    font-family: var(--dev-font-family-base);
+}
+
+/*Esconde o Radio Button Nativo do Browser*/
+.dev-radio>input {
+    opacity: 0;
+    position: absolute;
+    cursor: pointer;
+}
+
+/*Estilo base do checkmark*/
+.dev-radio>.checkmark {
+    display: inline-block;
+    border-radius: 50%;
+    height: 22px;
+    width: 22px;
+    border: 2px solid var(--dev-color-gray-dark);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/*Estiliza e preenche o fundo do checkmark quando radiobutton é checado*/
+.dev-radio>input:checked~.checkmark {
+    background-color: white;
+    border-color: var(--dev-color-primary);
+}
+
+/*Estilo base do ponto do checkmark*/
+.dev-radio>.checkmark:after {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    position: absolute;
+    content: "";
+    top: 3px;
+    left: 3px;
+    background-color: var(--dev-color-primary);
+    display: none;
+}
+
+.dev-radio>input:checked~.checkmark:after {
+    display: block;
+}

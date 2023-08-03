@@ -1,0 +1,37 @@
+.dev-table {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    background-color: white;
+    padding: 24px, 32px;
+}
+
+/*HEAD*/
+
+.dev-table>.head {
+    font-size: calc(var(--dev-font-size-base) + 6px);
+    font-weight: 600;
+    color: var(--dev-color-gray-light);
+}
+
+.dev-table>.head>.row {
+    display: grid;
+    grid-template-columns: 2fr 1fr 200px;
+
+}
+
+/*BODY*/
+
+.dev-table>.body {}
+
+.dev-table>.body>.row {
+    display: grid;
+    padding: 24px 0;
+    grid-template-columns: 2fr 1fr 200px;
+
+}
+
+/*BODY - TITLE-DESCRIPTION*/
+
+.dev-table>.body>.row>.title-description {}
+
+.dev-table>.body>.row>.title-description {}

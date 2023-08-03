@@ -1,0 +1,33 @@
+.dev-wrapper {
+    max-width: var(--dev-main-wrapper);
+    margin: 0 auto;
+}
+
+.dev-wrapper>.main-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: var(--dev-header-size);
+}
+
+.dev-wrapper>.main-content.-one-col {
+    grid-template-columns: 1fr;
+}
+
+.dev-wrapper>.main-content>.left {
+    padding-top: 48px;
+}
+
+.dev-wrapper>.main-content>.right {
+    overflow: hidden;
+    position: relative;
+    height: 100vh;
+}
+
+.dev-wrapper>.main-content>.right>.image {
+    position: absolute;
+    height: 100%;
+    min-width: 100%;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}

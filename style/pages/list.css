@@ -1,0 +1,16 @@
+.dev-list>.dev-wrapper>.main-content>.title-button {
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.dev-list>.dev-wrapper>.main-content>.title-button>.title {
+    font-size: calc(var(--dev-font-size-base) + 30px);
+    font-weight: 700;
+}
+
+.dev-list>.dev-wrapper>.main-content>.title-button>.button-wrapper {}
+
+.dev-list>.dev-wrapper>.main-content>.table-wrapper {
+    margin-top: 32px;
+}

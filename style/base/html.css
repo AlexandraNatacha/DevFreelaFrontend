@@ -1,5 +1,5 @@
 html {
     background-color: var(--dev-color-gray-lighter);
-    font-family: var(--font-family-base);
+    font-family: var(--dev-font-family-base);
     font-weight: 500;
 }

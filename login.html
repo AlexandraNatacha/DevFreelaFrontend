@@ -28,9 +28,13 @@
     <link rel="stylesheet" href="style/base/html.css">
 
     <!--OBJECTS-->
+    <link rel="stylesheet" href="style/objects/dev-wrapper.css">
 
     <!--COMPONENTS-->
     <link rel="stylesheet" href="style/components/dev-button.css">
+    <link rel="stylesheet" href="style/components/dev-input.css">
+    <link rel="stylesheet" href="style/components/dev-radio.css">
+    <link rel="stylesheet" href="style/components/dev-header.css">
 
     <!--PAGES-->
     <link rel="stylesheet" href="style/pages/login.css">
@@ -52,6 +56,33 @@
             </header>
             <main class="main-content">
                 <div class="left">
+                    <span class="steps">PASSO 1 DE 2</span>
+                    <h1 class="main-title">
+                        <span class="up">Olá!</span>
+                        <span class="down">Vamos criar seu cadastro.</span>
+                    </h1>
+                    <div class="radio-buttons">
+                        <h3 class="title">Qual seu perfil?</h3>
+                        <div class="buttons">
+                            <label class="dev-radio">
+                                Dev
+                                <input name="cargo" type="radio">
+                                <span class="checkmark"></span>
+                            </label>
+
+                            <label class="dev-radio">
+                                Cliente
+                                <input name="cargo" type="radio">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <input class="dev-input" placeholder="Nome completo">
+                    <input type="date" class="dev-input" placeholder="Data de nascimento">
+                    <input type="email" class="dev-input" placeholder="Email">
+                    <input type="password" class="dev-input" placeholder="Senha">
+
                     <button class="dev-button">Continuar</button>
                 </div>
                 <div class="right">
@@ -59,7 +90,6 @@
                         src="assets/image/bg-cubes.png">
                 </div>
             </main>
-
         </div>
     </div>
 
