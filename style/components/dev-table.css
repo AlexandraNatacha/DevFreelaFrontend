@@ -2,7 +2,7 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
     background-color: white;
-    padding: 24px, 32px;
+    padding: 28px;
 }
 
 /*HEAD*/
@@ -16,7 +16,7 @@
 .dev-table>.head>.row {
     display: grid;
     grid-template-columns: 2fr 1fr 200px;
-
+    padding: 0 32px;
 }
 
 /*BODY*/
@@ -25,13 +25,26 @@
 
 .dev-table>.body>.row {
     display: grid;
-    padding: 24px 0;
+    padding: 24px 32px;
     grid-template-columns: 2fr 1fr 200px;
-
+    border-bottom: 1px solid var(--dev-color-gray-lighter);
 }
 
-/*BODY - TITLE-DESCRIPTION*/
+.dev-table>.body>.row:last-child {
+    border-bottom: none;
 
-.dev-table>.body>.row>.title-description {}
+    /*BODY - TITLE-DESCRIPTION*/
 
-.dev-table>.body>.row>.title-description {}
+    .dev-table>.body>.row>.title-description {}
+
+    .dev-table>.body>.row>.title-description>.title {
+        font-weight: 600;
+        margin-bottom: 8px;
+    }
+
+    .dev-table>.body>.row>.title-description {}
+
+    .dev-table>.body>.row>.price {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+    }

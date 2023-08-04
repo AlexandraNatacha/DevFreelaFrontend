@@ -7,8 +7,9 @@
     --dev-color-danger: #FF2222;
 
     /*GRAY*/
-    --dev-color-gray: #767684;
-    --dev-color-gray-lighter: #F9FBFD;
+    --dev-color-gray-lightest: #F9FBFD;
+    --dev-color-gray-lighter: rgba(196, 196, 196, 0.35);
     --dev-color-gray-light: #B8B7B7;
+    --dev-color-gray: #767684;
     --dev-color-gray-dark: #09090A;
 }
