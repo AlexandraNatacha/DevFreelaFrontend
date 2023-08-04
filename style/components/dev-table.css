@@ -32,19 +32,38 @@
 
 .dev-table>.body>.row:last-child {
     border-bottom: none;
+}
 
-    /*BODY - TITLE-DESCRIPTION*/
+/*BODY - TITLE-DESCRIPTION*/
 
-    .dev-table>.body>.row>.title-description {}
+.dev-table>.body>.row>.title-description {}
 
-    .dev-table>.body>.row>.title-description>.title {
-        font-weight: 600;
-        margin-bottom: 8px;
-    }
+.dev-table>.body>.row>.title-description>.title {
+    font-weight: 600;
+    margin-bottom: 8px;
+}
 
-    .dev-table>.body>.row>.title-description {}
+.dev-table>.body>.row>.title-description {}
 
-    .dev-table>.body>.row>.price {
-        font-family: 'Roboto', sans-serif;
-        font-weight: 500;
-    }
+/*BODY-PRICE*/
+
+.dev-table>.body>.row>.price {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+/*bODY-ACTIONS*/
+
+.dev-table>.body>.row>.actions {}
+
+.dev-table>.body>.row>.actions>.edit {
+    color: var(--dev-color-primary);
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.dev-table>.body>.row>.actions>.delete {
+    color: var(--dev-color-danger);
+    cursor: pointer;
+
+}
