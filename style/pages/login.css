@@ -1,6 +1,6 @@
 .dev-login>.dev-wrapper>.main-content>.left {
     max-width: 450px;
-    margin: 0 auto;
+    margin: auto;
 }
 
 .dev-login>.dev-wrapper>.main-content>.left>.radio-buttons {

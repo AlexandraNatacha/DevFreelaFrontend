@@ -4,12 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login - DevFreela</title>
+    <title>Create - DevFreela</title>
 
     <!--FONTS-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <!--STYLES ITCSS-->
 
@@ -33,19 +34,20 @@
     <!--COMPONENTS-->
     <link rel="stylesheet" href="style/components/dev-button.css">
     <link rel="stylesheet" href="style/components/dev-input.css">
-    <link rel="stylesheet" href="style/components/dev-radio.css">
     <link rel="stylesheet" href="style/components/dev-header.css">
 
     <!--PAGES-->
-    <link rel="stylesheet" href="style/pages/login.css">
+    <link rel="stylesheet" href="style/pages/project-create-edit.css">
 
     <!--TRUMPS-->
     <link rel="stylesheet" href="style/trumps/visibilidade.css">
 
+    <!--SCRIPTS-->
+    <script src="scripts/dev-project-create-edit.js"></script>
 </head>
 
 <body>
-    <div class="dev-login">
+    <div class="dev-project-create-edit">
         <div class="dev-wrapper">
             <header class="dev-header">
                 <div class="wrapper">
@@ -55,38 +57,20 @@
                 </div>
             </header>
             <main class="main-content">
-                <form class="left" onsubmit="cadastrar()" action="javascript:void(0)">
-                    <h1 class="main-title">
-                        <span class="up">Olá!</span>
-                        <span class="down">Vamos criar seu cadastro.</span>
-                    </h1>
-                    <div class="radio-buttons">
-                        <h3 class="title">Qual seu perfil?</h3>
-                        <div class="buttons">
-                            <label class="dev-radio">
-                                Dev
-                                <input name="cargo" type="radio">
-                                <span class="checkmark"></span>
-                            </label>
+                <a class=" back-btn material-icons" href="projects-list.html">
+                    keyboard_arrow_left
+                </a>
+                <div class="left">
+                    <h1 class="main-title" id="main-title"></h1>
+                    <input class="dev-input" placeholder="Título">
+                    <input class="dev-input" placeholder="Custo total">
+                    <textarea class="dev-input" placeholder="Descrição"></textarea>
 
-                            <label class="dev-radio">
-                                Cliente
-                                <input name="cargo" type="radio">
-                                <span class="checkmark"></span>
-                            </label>
-                        </div>
-                    </div>
-
-                    <input required id="fullName" class="dev-input" placeholder="Nome completo">
-                    <input required id="birthdate" type="date" class="dev-input" placeholder="Data de nascimento">
-                    <input required id="email" type="email" class="dev-input" placeholder="Email">
-                    <input required id="password" type="password" class="dev-input" placeholder="Senha">
-
-                    <button type="submit" class="dev-button">Continuar</button>
-                </form>
+                    <button class="dev-button" id="action-button"></button>
+                </div>
                 <div class="right">
                     <img class="image" alt="Fundo de decoração com 3 cubos com gradiente das cores do arco-íris"
-                        src="assets/image/bg-cubes.png">
+                        src="assets/image/bg-float-cubes.png">
                 </div>
             </main>
         </div>
