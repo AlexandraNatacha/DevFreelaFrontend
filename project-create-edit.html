@@ -43,7 +43,7 @@
     <link rel="stylesheet" href="style/trumps/visibilidade.css">
 
     <!--SCRIPTS-->
-    <script src="scripts/dev-project-create-edit.js"></script>
+    <script src="scripts/project-create-edit.js"></script>
 </head>
 
 <body>
@@ -60,14 +60,14 @@
                 <a class=" back-btn material-icons" href="projects-list.html">
                     keyboard_arrow_left
                 </a>
-                <div class="left">
+                <form class="left" onsubmit="cadastrar()" action="javascript:void(0)">
                     <h1 class="main-title" id="main-title"></h1>
-                    <input class="dev-input" placeholder="Título">
-                    <input class="dev-input" placeholder="Custo total">
-                    <textarea class="dev-input" placeholder="Descrição"></textarea>
+                    <input required id="title" class="dev-input" placeholder="Título">
+                    <input required id="totalCost" class="dev-input" placeholder="Custo total">
+                    <textarea required id="description" class="dev-input" placeholder="Descrição"></textarea>
 
-                    <button class="dev-button" id="action-button"></button>
-                </div>
+                    <button type="submit" class="dev-button" id="action-button"></button>
+                </form>
                 <div class="right">
                     <img class="image" alt="Fundo de decoração com 3 cubos com gradiente das cores do arco-íris"
                         src="assets/image/bg-float-cubes.png">
@@ -75,8 +75,6 @@
             </main>
         </div>
     </div>
-
-    <script src="./script.js"></script>
 </body>
 
 </html>
