@@ -14,7 +14,11 @@ function checkIfAnyRoleIsChecked() {
 function cadastrar() {
     // Checa se alguma role foi checada.
     if (checkIfAnyRoleIsChecked() === false) {
-        alert('Marque alguma role!');
+        Swal.fire(
+            'Algo deu errado...',
+            'Marque alguma role!',
+            'error'
+        )
         return;
     }
 
@@ -37,6 +41,19 @@ function cadastrar() {
     })
         .then(response => response.json())
         .then(response => {
-            alert('Cadastrado com sucesso!');
+            Swal.fire({
+                title: 'Bom trabalho!',
+                text: 'Cadastrado com sucesso!',
+                icon: 'success',
+                confirmButtonText: 'Ok!'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    localStorage.setItem("userName", response.fullName);
+                    localStorage.setItem("role", response.role === 'dev' ? "Desenvolvedor" : "Cliente");
+                    localStorage.setItem("idClient", response.id);
+
+                    window.location = "projects-list.html";
+                }
+            })
         })
 }
